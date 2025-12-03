@@ -23,11 +23,13 @@
 
 .header_link-list_no-bullit {
 
+    font-size: 18px;
     list-style: none;
 }
 
 .header_link-list {
 
+    font-size: 18px;
     display: flex;
     gap: 32px;
     list-style: circle;
@@ -35,6 +37,7 @@
  
 .address{
     max-width: 240px;
+    font-size: 18px;
     justify-self: end;
     display: flex;
     flex-direction: column;
@@ -66,7 +69,7 @@
     height: 100%;
      top:0;
     left:0;
-    z-index:1;
+    z-index: 1;
     background-color: rgb(0,0,0,0.6);
 }
 
@@ -171,6 +174,7 @@
 }
 
 .lots__card-list{
+    
     display: flex;
     padding-top: 27px;
     gap: 25px;
@@ -182,77 +186,104 @@
     height: 100%;
 }
 .card{
-
+    
     height: 100%;
 
 }
 
-.card_type_film{
-
+.lots__card-list-item{
+    
     width: 334px;
     min-height: 596px;
+
+}
+
+.card_type_film{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-image: url(/Users/a1111/dev/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 
 }
 
 .card_type_book{
-
-    width: 334px;
-    min-height: 596px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-image: url(/Users/a1111/dev/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg);
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
+    
 
 }
 
 .card_type_picture{
 
-    width: 334px;
-    min-height: 596px;
+    position: relative;
+   display: flex;
+   flex-direction: column;
     background-image: url(/Users/a1111/dev/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg);
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 .card__title{
 
     padding-top: 48px;
+    padding-right: 40px;
     padding-left: 40px;
     font-size: 22px;
+    z-index: 10;
     text-transform: uppercase;
     color: white;
 }
 
 .card__text-film{
 
-    padding: 404px 40px 48px 40px;
-    line-height: 120%;
-    font-size: 20px;
-    color: white;
-}
-
-.card__text-book{
-   
-    padding-top: 188px;
-    font-weight: 400;
-    line-height: 120%;
-    font-size: 20px;
-    color: white;
-}
-
-.card__text-picture{
-    
-    padding-top: 284px;
+    padding-top: 274px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 48px;
     line-height: 120%;
     font-size: 20px;
+    z-index: 10;
+    font-weight: lighter;
+    color: white;
+}
+
+.card__text-book{
+   
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    line-height: 120%;
+    font-size: 20px;
+    z-index: 10;
+    font-weight: lighter;
+    color: white;
+    
+}
+
+.card__text-picture{
+    
+    padding-top: 126px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    line-height: 120%;
+    font-size: 20px;
+    z-index: 10;
+    font-weight: lighter;
     color: white;
 }
 
@@ -262,4 +293,130 @@
     line-height: 100%;
     padding-top: 30px;
     padding-left: 40px;
+}
+
+.about {
+
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 334px 2fr;
+
+
+}
+
+.about_logo{
+
+    display: flex;
+    height: 240px;
+    width: 240px;
+    padding-top: 35px;
+    padding-left: 47px;
+    background-color: black;
+    border-radius: 50%; 
+    
+}
+
+.about_logo-image{
+
+    width: 148px;
+    height: 114px;
+    justify-content: center;
+    align-self: center;
+}
+
+.about_text{
+
+    width: 693px;
+    height: 449px;
+    padding-top: 133px;
+    padding-left: 72px;
+}
+
+.about_text-column{
+
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about_text-head{
+
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about_text-item{
+
+    font-size: 20px;
+    font-weight:lighter; 
+    line-height: 24px;
+}
+
+.footer{
+
+    padding-top: 500px;
+    display: grid;
+    width: 1100px;
+    height: 180px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.footer_menu{
+
+    grid-column: 2/3;
+}
+.footer__menu-list{
+
+    list-style: none;
+    text-align: center;
+}
+
+.footer__menu-link_active{
+
+    font-size: 18px;
+}
+
+.footer__menu-link{
+
+    font-size: 18px;
+}
+
+.address_footer{
+
+    vertical-align: top;
+    font-size: 18px;
+    font-style: normal;
+    grid-column: 1/3;
+
+}
+
+.footer__social-link{
+
+    grid-column: 3/3;
+    display: flex;
+    gap: 48px;
+}
+
+.footer__social-icon-yt{
+width: 48px;
+height: 48px;
+background-image: url(/Users/a1111/dev/first-project/ono-tebe-nado-fd/images/yt.svg);
+
+}
+
+.footer__social-icon-vk{
+
+    width: 48px;
+    height: 48px;
+    background-image: url(/Users/a1111/dev/first-project/ono-tebe-nado-fd/images/vk.svg);
+}
+
+.footer__social-icon-pin{
+
+    width: 48px;
+    height: 48px;
+    background-image: url(/Users/a1111/dev/first-project/ono-tebe-nado-fd/images/pinterest.svg);
 }
